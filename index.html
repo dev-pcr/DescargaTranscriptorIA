@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transcriptor IA — Guía de Inicio Rápido</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Inria+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Inria+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --bg: #0a0a0a;
@@ -20,8 +22,18 @@
             --font-serif: 'Inria Serif', serif;
         }
 
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background: var(--bg);
             color: var(--text);
@@ -31,9 +43,14 @@
         }
 
         #matrix-canvas {
-            position: fixed; top: 0; left: 0;
-            width: 100%; height: 100%;
-            pointer-events: none; opacity: 0.04; z-index: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.04;
+            z-index: 0;
         }
 
         header {
@@ -42,10 +59,16 @@
             border-bottom: 1px solid var(--border);
             background: rgba(10, 10, 10, 0.8);
             backdrop-filter: blur(8px);
-            position: sticky; top: 0; z-index: 100;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        .logo { color: var(--green); font-weight: 700; letter-spacing: 2px; }
+        .logo {
+            color: var(--green);
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
 
         .container {
             max-width: 900px;
@@ -55,9 +78,23 @@
             z-index: 1;
         }
 
-        h1 { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; }
-        .highlight { color: var(--green); }
-        .intro { text-align: center; color: var(--muted); margin-bottom: 5rem; font-family: var(--font-serif); font-size: 1.1rem; }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: var(--green);
+        }
+
+        .intro {
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: 5rem;
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+        }
 
         /* CAROUSEL STYLES */
         .carousel {
@@ -118,8 +155,13 @@
             color: var(--bg);
         }
 
-        .carousel-control.prev { left: 10px; }
-        .carousel-control.next { right: 10px; }
+        .carousel-control.prev {
+            left: 10px;
+        }
+
+        .carousel-control.next {
+            right: 10px;
+        }
 
         .carousel-indicators {
             position: absolute;
@@ -169,7 +211,10 @@
             font-size: 1.2rem;
         }
 
-        .step-card h2 { font-size: 1.8rem; color: var(--green); }
+        .step-card h2 {
+            font-size: 1.8rem;
+            color: var(--green);
+        }
 
         .step-content p {
             font-family: var(--font-serif);
@@ -220,16 +265,36 @@
             transition: 0.2s;
         }
 
-        .btn-download:hover { background: #fff; }
-
-        @media (max-width: 768px) {
-            .step-card { padding: 1.5rem; }
-            h1 { font-size: 2rem; }
-            .carousel-control { width: 30px; height: 30px; font-size: 0.8rem; }
+        .btn-download:hover {
+            background: #fff;
         }
 
-        .reveal { opacity: 0; transform: translateY(20px); transition: 0.8s; }
-        .reveal.visible { opacity: 1; transform: translateY(0); }
+        @media (max-width: 768px) {
+            .step-card {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .carousel-control {
+                width: 30px;
+                height: 30px;
+                font-size: 0.8rem;
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.8s;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 
@@ -242,10 +307,13 @@
 
     <div class="container">
         <h1 class="reveal">Domina tu <span class="highlight">Transcriptor IA</span></h1>
-        <p class="intro reveal">Sigue estos pasos detallados para configurar y empezar a usar la herramienta como un profesional.</p>
-        
+        <p class="intro reveal">Sigue estos pasos detallados para configurar y empezar a usar la herramienta como un
+            profesional.</p>
+
         <div style="text-align: center; margin-bottom: 5rem;" class="reveal">
-            <a href="https://drive.google.com/uc?export=download&id=1BuaNYAr6peeQVLyZPCdWHDizR7W3w016" download class="btn-download" style="display: inline-block; width: auto; padding: 1.2rem 3rem;">Descargar Ahora</a>
+            <a href="https://drive.google.com/uc?export=download&id=1BuaNYAr6peeQVLyZPCdWHDizR7W3w016" download
+                class="btn-download" style="display: inline-block; width: auto; padding: 1.2rem 3rem;">Descargar
+                Ahora</a>
         </div>
 
         <!-- STEP 1 -->
@@ -255,17 +323,20 @@
                 <h2>Obtener tu Llave Maestra</h2>
             </div>
             <div class="step-content">
-                <p>Para que la Inteligencia Artificial trabaje a máxima velocidad, necesitamos una "llave" (API Key) gratuita de Groq.</p>
+                <p>Para que la Inteligencia Artificial trabaje a máxima velocidad, necesitamos una "llave" (API Key)
+                    gratuita de Groq.</p>
                 <ul>
-                    <li>Ingresa en <a href="https://console.groq.com/keys" target="_blank" style="color:var(--green)">console.groq.com/keys</a></li>
+                    <li>Ingresa en <a href="https://console.groq.com/keys" target="_blank"
+                            style="color:var(--green)">console.groq.com/keys</a></li>
                     <li>Inicia sesión (puedes usar tu cuenta de Google).</li>
                     <li>Haz clic en el botón <strong>"Create API Key"</strong>.</li>
                     <li>Ponle un nombre (ej. "Mi PC") y copia el código que aparece.</li>
                 </ul>
                 <div class="warning">
-                    <strong>IMPORTANTE:</strong> Esta llave es personal y privada. No la compartas con nadie, es como la contraseña de tu cuenta.
+                    <strong>IMPORTANTE:</strong> Esta llave es personal y privada. No la compartas con nadie, es como la
+                    contraseña de tu cuenta.
                 </div>
-                
+
                 <div class="carousel" id="carousel-1">
                     <div class="carousel-inner">
                         <div class="carousel-item"><img src="assets/1.png" alt="Paso 1.1"></div>
@@ -295,11 +366,13 @@
                 <p>Ahora vamos a traer el programa a tu computadora.</p>
                 <ul>
                     <li>Haz clic en el botón de descarga (al principio o al final de esta página).</li>
-                    <li><strong>AVISO DE SEGURIDAD:</strong> Como el archivo es grande (200MB), Google Drive dirá que "no puede analizarlo en busca de virus". <strong>No tengas miedo</strong>, es un aviso estándar por el tamaño; el software es 100% seguro.</li>
+                    <li><strong>AVISO DE SEGURIDAD:</strong> Como el archivo es grande (200MB), Google Drive dirá que
+                        "no puede analizarlo en busca de virus". <strong>No tengas miedo</strong>, es un aviso estándar
+                        por el tamaño; el software es 100% seguro.</li>
                     <li>Una vez descargado, abre la carpeta y busca el archivo con el logo verde.</li>
                     <li>Haz doble clic en <strong>"Instalar_Transcriptor_IA.exe"</strong> para iniciar.</li>
                 </ul>
-                
+
                 <div class="carousel" id="carousel-2">
                     <div class="carousel-inner">
                         <div class="carousel-item"><img src="assets/5.png" alt="Paso 2.1"></div>
@@ -325,16 +398,30 @@
                 <p>Una vez que abras el instalador descargado:</p>
                 <ul>
                     <li>Haz clic en <strong>"Siguiente" (Next)</strong> en todas las pantallas.</li>
-                    <li><strong>IMPORTANTE:</strong> Asegúrate de marcar la casilla que dice "Crear un acceso directo en el escritorio" para encontrar la app fácilmente.</li>
-                    <li>Al abrir el programa por primera vez, pega la <strong>API Key</strong> que obtuviste en el Paso 01.</li>
-                    <li>Selecciona los modelos de IA que deseas usar (los modelos más grandes son más lentos pero mucho más precisos).</li>
+                    <li><strong>IMPORTANTE:</strong> Asegúrate de marcar la casilla que dice "Crear un acceso directo en
+                        el escritorio" para encontrar la app fácilmente.</li>
+                    <li>Al abrir el programa por primera vez, pega la <strong>API Key</strong> que obtuviste en el Paso
+                        01.</li>
+                    <li>Selecciona los modelos de IA que deseas usar (los modelos más grandes son más lentos pero mucho
+                        más precisos).</li>
                 </ul>
-                <div class="warning">
-                    <strong>PACIENCIA:</strong> La descarga de modelos puede tardar unos minutos. Es normal, solo ocurre la primera vez.
+
+                <div class="warning" style="border-left-color: var(--green); background: rgba(85, 241, 152, 0.05);">
+                    <strong> NOTA DE SEGURIDAD:</strong> Si Windows muestra una pantalla azul diciendo <em>"Windows
+                        protegió su PC"</em>, no te preocupes.
+                    Esto ocurre simplemente porque es desarrollo independiente y el programa es nuevo.
+                    Es <strong>100% seguro</strong>. Para continuar, haz clic en <strong>"Más información"</strong> y
+                    luego en el botón <strong>"Ejecutar de todas formas"</strong>.
                 </div>
-                
+
+                <div class="warning">
+                    <strong>PACIENCIA:</strong> La descarga de modelos puede tardar unos minutos. Es normal, solo ocurre
+                    la primera vez.
+                </div>
+
                 <div class="carousel" id="carousel-3">
                     <div class="carousel-inner">
+                        <div class="carousel-item"><img src="assets/smartscreen.png" alt="Aviso de Windows"></div>
                         <div class="carousel-item"><img src="assets/7.png" alt="Paso 3.1"></div>
                         <div class="carousel-item"><img src="assets/8.png" alt="Paso 3.2"></div>
                     </div>
@@ -343,6 +430,7 @@
                     <div class="carousel-indicators">
                         <div class="dot active" onclick="setCarousel('carousel-3', 0)"></div>
                         <div class="dot" onclick="setCarousel('carousel-3', 1)"></div>
+                        <div class="dot" onclick="setCarousel('carousel-3', 2)"></div>
                     </div>
                 </div>
             </div>
@@ -358,11 +446,14 @@
                 <p>¡Todo listo! El proceso es muy sencillo:</p>
                 <ul>
                     <li><strong>Elegir Audio:</strong> Selecciona tu archivo de sonido.</li>
-                    <li><strong>Modelo de IA:</strong> Escoge el que prefieras (Groq para velocidad nube, o Local para privacidad).</li>
+                    <li><strong>Modelo de IA:</strong> Escoge el que prefieras (Groq para velocidad nube, o Local para
+                        privacidad).</li>
                     <li><strong>Instrucciones:</strong> Elige cómo quieres el texto final.</li>
-                    <li><strong>Finalizar:</strong> Una vez terminada la transcripción, puedes <strong>copiar el texto</strong> directamente o <strong>descargar un archivo Word</strong> que se guardará automáticamente en tu escritorio principal.</li>
+                    <li><strong>Finalizar:</strong> Una vez terminada la transcripción, puedes <strong>copiar el
+                            texto</strong> directamente o <strong>descargar un archivo Word</strong> que se guardará
+                        automáticamente en tu escritorio principal.</li>
                 </ul>
-                
+
                 <div class="carousel" id="carousel-4">
                     <div class="carousel-inner">
                         <div class="carousel-item"><img src="assets/9.png" alt="Paso 4.1"></div>
@@ -376,7 +467,8 @@
         <div class="step-card reveal" style="text-align: center; border-color: var(--green);">
             <h2>¿Todo listo?</h2>
             <p style="margin-bottom: 2rem;">Descarga el instalador ahora y comienza a ahorrar tiempo.</p>
-            <a href="https://drive.google.com/uc?export=download&id=1BuaNYAr6peeQVLyZPCdWHDizR7W3w016" download class="btn-download">Descargar Transcriptor IA</a>
+            <a href="https://drive.google.com/uc?export=download&id=1BuaNYAr6peeQVLyZPCdWHDizR7W3w016" download
+                class="btn-download">Descargar Transcriptor IA</a>
         </div>
     </div>
 
@@ -424,11 +516,11 @@
             const inner = carousel.querySelector('.carousel-inner');
             const items = carousel.querySelectorAll('.carousel-item');
             const dots = carousel.querySelectorAll('.dot');
-            
+
             if (!carouselStates[id]) carouselStates[id] = 0;
-            
+
             carouselStates[id] = (carouselStates[id] + direction + items.length) % items.length;
-            
+
             updateCarousel(id);
         }
 
@@ -442,13 +534,14 @@
             const inner = carousel.querySelector('.carousel-inner');
             const dots = carousel.querySelectorAll('.dot');
             const index = carouselStates[id] || 0;
-            
+
             inner.style.transform = `translateX(-${index * 100}%)`;
-            
+
             dots.forEach((dot, i) => {
                 dot.classList.toggle('active', i === index);
             });
         }
     </script>
 </body>
+
 </html>
